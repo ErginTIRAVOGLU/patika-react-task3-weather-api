@@ -1,10 +1,13 @@
-import './App.css';
+import "./App.css";
+
+import Container from "./components/Container";
+import { SehirProvider } from "./context/SehirContext";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <SehirProvider>
+      <Container />
+    </SehirProvider>
   );
 }
 
